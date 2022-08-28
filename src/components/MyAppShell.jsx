@@ -14,6 +14,8 @@ import { Route, Link, Routes } from "react-router-dom";
 import Home from "./Home";
 import LeadGrid from "./LeadGrid";
 import logo from "../assets/logo.svg"
+import Calc from "./Calc";
+
 
 
 export default function MyAppShell() {
@@ -74,6 +76,8 @@ export default function MyAppShell() {
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<LeadGrid />} />
+        <Route path="calc" element={<Calc />} />
+        
       </Routes>
     </AppShell>
   );

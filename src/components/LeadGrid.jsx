@@ -7,6 +7,8 @@ import {
 import ProgressCard from "./ProgressCard";
 import betmagic from "../assets/projects/betmagic.svg"
 import crypto from "../assets/projects/crypto.svg"
+import calc from "../assets/projects/calc.svg"
+
 const PRIMARY_COL_HEIGHT = 300;
 
 const LeadGrid = () => {
@@ -35,9 +37,12 @@ const LeadGrid = () => {
           </Grid.Col>
           <Grid.Col span={6}>
             <ProgressCard   total="30"
-              title="Adventures"
+              title="Loan Calculator"
               height={SECONDARY_COL_HEIGHT}
+              link="/calc"
               radius="md"
+              image={calc}
+              codelink="https://github.com/samusun/loanCalculator"
               animate={true} />
           </Grid.Col>
           <Grid.Col span={6}>

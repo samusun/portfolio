@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function ProgressCard({ title, total, image, link, codelink}) {
   return (
     <Card className="p-0 m-0 border-2 border-cyan-400 bg-cyan-400 text-gray-800 font-medium" >
-      <a href={link}>
+      <Link href={link}>
       <div > 
       <Text align="center" size="md">
               {title}
@@ -14,7 +14,7 @@ export default function ProgressCard({ title, total, image, link, codelink}) {
           <Image src={image}/>
           
         </div>
-        </a>
+        </Link>
         <a href={codelink}>
         <Text underline align="center">
          {codelink && "Code in Github"}
