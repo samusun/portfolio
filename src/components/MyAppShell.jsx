@@ -3,16 +3,17 @@ import {
   AppShell,
   Navbar,
   Header,
-  Footer,
-  Aside,
   Text,
   MediaQuery,
   Burger,
   useMantineTheme,
+  Title,
+  Image,
 } from "@mantine/core";
 import { Route, Link, Routes } from "react-router-dom";
 import Home from "./Home";
 import LeadGrid from "./LeadGrid";
+import logo from "../assets/logo.svg"
 
 
 export default function MyAppShell() {
@@ -27,34 +28,44 @@ export default function MyAppShell() {
       asideOffsetBreakpoint="sm"
       navbar={
         <Navbar
-        className="bg-black text-white"
+        className="bg-black text-white p-5 "
           p="md"
           hiddenBreakpoint="sm"
           hidden={!opened}
           width={{ sm: 200, lg: 300 }}
         >
-          <Link to="about">Projectsss</Link>
+          <div className="pt-20">
+          <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
+          <Link to="about">Projects</Link>
+          </Title>
+          <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
           <Link to="about" >About</Link>
+          </Title>
+          <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
           <Link to="about">Contact</Link>
+          </Title>
+          </div>
         </Navbar>
       }
       header={
-        <Header height={70} p="md" className="bg-black text-white">
+        <Header height={70} p="sm" className="bg-black">
           <div
-            style={{ display: "flex", alignItems: "center", height: "100%" }}
+            style={{ display: "flex", alignItems: "center",
+            justifyContent: "space-between", height: "100%", width: "100%", margin:"0"}}
           >
-            <MediaQuery largerThan="sm" styles={{ display: "none" }}>
+              <Link to="/">
+                <Image src={logo}/>
+            </Link>
+            <MediaQuery  largerThan="sm" styles={{ display: "none" }}>
               <Burger
+              
                 opened={opened}
                 onClick={() => setOpened((o) => !o)}
-                size="sm"
+                size="md"
                 color={theme.colors.gray[6]}
                 mr="xl"
               />
             </MediaQuery>
-              <Link to="/">
-                <Text>Samuel Sundberg</Text>
-            </Link>
           </div>
         </Header>
       }

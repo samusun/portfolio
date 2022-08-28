@@ -2,10 +2,11 @@ import {
   Container,
   Grid,
   SimpleGrid,
-  Skeleton,
   useMantineTheme,
 } from "@mantine/core";
 import ProgressCard from "./ProgressCard";
+import betmagic from "../assets/projects/betmagic.svg"
+import crypto from "../assets/projects/crypto.svg"
 const PRIMARY_COL_HEIGHT = 300;
 
 const LeadGrid = () => {
@@ -21,10 +22,11 @@ const LeadGrid = () => {
       >
         <Grid gutter="md">
           <Grid.Col span={6}>
-            <ProgressCard total="10" title="Running" />
+            <ProgressCard total="10" title="Bet Magic"
+             image={betmagic} link="https://main.dv5hj122gcmv0.amplifyapp.com/#/" codelink="https://github.com/samusun/BetMagic" />
           </Grid.Col>
           <Grid.Col span={6}>
-            <ProgressCard total="10" title="Music" />
+            <ProgressCard total="10" image={crypto} title="Crypto Hindsight" link="https://main.d3h2uqsm3wm71v.amplifyapp.com/#/" codelink="https://github.com/samusun/crypto-hindsight" />
           </Grid.Col>
           <Grid.Col>
             <ProgressCard
