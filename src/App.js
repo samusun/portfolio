@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, MantineProvider, Text } from "@mantine/core";
+import LeadGrid from "./components/LeadGrid";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import { Navbar, Header } from "@mantine/core";
+import MyAppShell from "./components/MyAppShell";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyAppShell />
     </div>
   );
 }
-
-export default App;
