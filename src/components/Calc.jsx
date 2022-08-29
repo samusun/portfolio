@@ -8,6 +8,7 @@ function Calc() {
   const [cost, setCost] = useState(0);
   const yearlyInterest = 0.099;
   const monthlyInterest = yearlyInterest / 12;
+  const [message, setMessage] = useState(false)
 
   const updateAmount = (e) => {
     setAmount(e.target.value);
@@ -71,7 +72,7 @@ function Calc() {
           >
             This was an assignement i got for a job application, calculating how much a loan would cost every month with a given interest.
             <br/> <br/>
-            In this assignement i used Material UI.
+             I used Material UI for the slider
           </Typography>
       <Box
         sx={{
@@ -149,9 +150,7 @@ function Calc() {
             variant="contained"
             color="success"
             onClick={() =>
-              console.log(
-                `/loan-application/?amount=${amount}&months=${months}`
-              )
+              setMessage(`Requested ${amount} kr, duration ${months} months`)
             }
             sx={{
               fontWeight: "bold",
@@ -160,6 +159,7 @@ function Calc() {
             Apply
           </Button>
         </Box>
+        <Typography sx={{ color: "white", paddingTop: "10px",}} >{message}</Typography>
       </Box>
     </Box>
   );

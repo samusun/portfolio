@@ -12,9 +12,11 @@ import {
 } from "@mantine/core";
 import { Route, Link, Routes } from "react-router-dom";
 import Home from "./Home";
-import LeadGrid from "./LeadGrid";
+import Projects from "./Projects";
 import logo from "../assets/logo.svg"
 import Calc from "./Calc";
+import About from "./About"
+import Contact from "./Contact"
 
 
 
@@ -38,13 +40,13 @@ export default function MyAppShell() {
         >
           <div className="pt-20">
           <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
-          <Link to="about">Projects</Link>
+          <Link to="projects">Projects</Link>
           </Title>
           <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
           <Link to="about" >About</Link>
           </Title>
           <Title onClick={() => setOpened((o) => !o)} size="h1" weight="100" className="p-3" >
-          <Link to="about">Contact</Link>
+          <Link to="contact">Contact</Link>
           </Title>
           </div>
         </Navbar>
@@ -75,7 +77,9 @@ export default function MyAppShell() {
         
         <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<LeadGrid />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
         <Route path="calc" element={<Calc />} />
         
       </Routes>
