@@ -22,7 +22,7 @@ const projectList = [
   },
   {
     span: 12,
-    title: "Code for THIS site",
+    title: "Code for THIS PORTFOLIO site",
     link: "https://github.com/samusun/portfolio",
     codelink: undefined,
     image: undefined,
