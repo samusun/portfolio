@@ -5,8 +5,10 @@ import {
   Title,
   Blockquote,
   Image,
+  Button,
 } from "@mantine/core";
 import samuelSC from "../assets/samuelSC.jpg";
+import SamuelCV from "../assets/SamuelCV.pdf";
 
 const PRIMARY_COL_HEIGHT = 300;
 
@@ -76,6 +78,19 @@ const About = () => {
             the constant pursuit of knowledge, and I look forward to the
             innovative possibilities that lie ahead.
           </Text>
+          <div className="flex justify-center p-8">
+            <a href={SamuelCV} target="_blank" rel="noopener noreferrer">
+              <Button
+                className="bg-cyan-400"
+                color="cyan"
+                radius="xl"
+                size="xl"
+                uppercase
+              >
+                CV
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
     </Container>

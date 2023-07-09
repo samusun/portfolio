@@ -47,7 +47,9 @@ export default function Contact() {
             reach out to me via phone, email, or LinkedIn.
           </Text>
           <br />
-          <Text>Let's connect and create something great!</Text>
+          <Text className="pb-12">
+            Let's connect and create something great!
+          </Text>
         </div>
       </div>
     </Container>
