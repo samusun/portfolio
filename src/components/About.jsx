@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <Container className="text-slate-200 my-4">
-      <Title className="text-cyan-400">About</Title>
+      <Title className="text-cyan-400 pb-4">About</Title>
       <Title order={4} italic>
         I'm Samuel Sundberg, a front-end developer with a love for technology,
         and a unique curiosity that drives me to challenge the conventional.
@@ -79,9 +79,14 @@ const About = () => {
             innovative possibilities that lie ahead.
           </Text>
           <div className="flex justify-center p-8">
-            <a href={SamuelCV} target="_blank" rel="noopener noreferrer">
+            <a
+              href={SamuelCV}
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button
-                className="bg-cyan-400"
+                className="bg-cyan-400 text-black"
                 color="cyan"
                 radius="xl"
                 size="xl"

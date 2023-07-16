@@ -6,11 +6,11 @@ import nft from "./nft.svg";
 
 const projectList = [
   {
-    span: 6,
-    image: nft,
-    title: "NFT Castle",
-    link: "https://auth-development-d9fe8.firebaseapp.com/",
-    codelink: "https://github.com/samusun/happyhacking",
+    span: 12,
+    title: "Code for this Portfolio",
+    link: "https://github.com/samusun/portfolio",
+    codelink: undefined,
+    image: undefined,
   },
   {
     span: 6,
@@ -20,19 +20,20 @@ const projectList = [
     // height: { SECONDARY_COL_HEIGHT },
     image: onboarding,
   },
-  {
-    span: 12,
-    title: "Code for THIS PORTFOLIO site",
-    link: "https://github.com/samusun/portfolio",
-    codelink: undefined,
-    image: undefined,
-  },
+
   {
     span: 6,
     title: "Bet Magic",
     image: betmagic,
     link: "https://main.dv5hj122gcmv0.amplifyapp.com/#/",
     codelink: "https://github.com/samusun/BetMagic",
+  },
+  {
+    span: 6,
+    image: nft,
+    title: "NFT Castle",
+    link: "https://auth-development-d9fe8.firebaseapp.com/",
+    codelink: "https://github.com/samusun/happyhacking",
   },
   {
     span: 6,

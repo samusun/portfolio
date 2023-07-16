@@ -1,10 +1,11 @@
-import { Container, Grid, SimpleGrid } from "@mantine/core";
+import { Title, Container, Grid, SimpleGrid } from "@mantine/core";
 import projectList from "../assets/projects/projectlist";
 import ProgressCard from "./ProgressCard";
 
 const LeadGrid = () => {
   return (
     <Container my="md">
+      <Title className="text-cyan-400 pb-4">Some Projects</Title>
       <SimpleGrid
         cols={2}
         spacing="md"

@@ -4,14 +4,14 @@ import { FaPhone, FaEnvelope, FaLinkedin, FaMapPin } from "react-icons/fa";
 export default function Contact() {
   return (
     <Container className="text-slate-200 my-4">
-      <Title className="text-cyan-400">Let's Connect!</Title>
+      <Title className="text-cyan-400 pb-4">Let's Connect!</Title>
       <Title order={4} italic>
         Reach out if you're interested in collaboration or if you have any
         questions. I'd love to hear from you!
       </Title>
       <div className="flex flex-col-reverse md:flex-row md:space-x-4">
         <div className="md:flex-1 md:pr-8">
-          <Card className="p-8 bg-gray-800 text-white shadow-md rounded-md space-y-4">
+          <Card className="p-4 bg-gray-800 text-white shadow-md rounded-md space-y-4">
             <Paper p="sm" className="flex items-center space-x-2 bg-gray-700">
               <FaPhone size={20} className="text-white" />
               <Text className="text-white">+46768233107</Text>
