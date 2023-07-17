@@ -3,6 +3,7 @@ import crypto from "./crypto.svg";
 import calc from "./calc.svg";
 import onboarding from "./onboarding.svg";
 import nft from "./nft.svg";
+import moveMore from "./moveMore.svg";
 
 const projectList = [
   {
@@ -11,6 +12,13 @@ const projectList = [
     link: "https://github.com/samusun/portfolio",
     codelink: undefined,
     image: undefined,
+  },
+  {
+    span: 6,
+    title: "MoveMore (In progress..)",
+    link: "https://main.d3lovymiw54b4j.amplifyapp.com/",
+    codelink: "https://github.com/samusun/ai-app",
+    image: moveMore,
   },
   {
     span: 6,
